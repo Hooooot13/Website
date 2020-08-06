@@ -1,0 +1,274 @@
+:root {
+  --background-color: black;
+  --card-background-color: rgba(255, 255, 255, 1);
+  --gradient-color-start: rgb(89, 51, 204);
+  --gradient-color-end: rgb(51, 204, 204);
+  --default-text-color: black;
+}
+
+html {
+    font-size: 12px;
+}
+
+html, body {
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Arial", serif;
+  font-size: 1.6rem;
+  color: var(--default-text-color);
+  margin: 0;
+  padding: 0;
+
+  /* Full height */
+
+}
+div {
+  padding: 0px 0px 0px 0px;
+}
+
+.Header {
+  background-image: url(HeaderBackground.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Header img{
+}
+
+.header .Title-Card {
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: var(--card-background-color);
+  border-radius: 0px;
+  text-align: center;
+}
+
+.Section-Heading {
+  padding: 10px 0px 10px 0px;
+  top: 10%;
+  width: 100%;
+
+  height: 10%;
+  background-color: white;
+}
+
+.Section-Heading h1 {
+  position: relative;
+  text-align: center;
+}
+
+.Experience {
+  width: 100%;
+  position: relative;
+}
+
+.Experience .Dates {
+  font-style: oblique;
+}
+
+.Experience h3{
+  width: 100%;
+  text-align: center;
+}
+
+.Experience .Company {
+  padding: 10px 0px 10px 0px;
+  background: var(--card-background-color);
+  position: relative;
+  left: 0%;
+  transform: translate(0%, 0%);
+  transition: 0.5s;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.Experience .IEEE-RobotTeam {
+  background-image: url(IEEE-Robot-Background.jpg);
+  height: 150%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Experience .ESR {
+  background-image: url(ESR-Background-Image.jpg);
+  height: 150%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Experience .IAC {
+  background-image: url(IAC-Background-Image.jpg);
+  height: 150%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Experience .American {
+  background-image: url(American-Background-Image.jpg);
+  height: 150%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Experience .Company h3{
+  color: black;
+}
+
+.Technical-Skills {
+  position: relative;
+}
+
+.Technical-Skills .Section-Heading {
+  text-align: center
+}
+
+.Technical-Skills .Background {
+  padding: 10px 0px 10px 0px;
+  background-image: url(IEEE-Robot-Background.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Technical-Skills ul {
+  list-style-type: none;
+}
+
+.Technical-Skills .Center {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.Technical-Skills .Column {
+  float: left;
+  width: 33%;
+}
+
+.Technical-Skills li {
+  background: var(--card-background-color);
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  margin-left: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Personal-Skills {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.Personal-Skills .Section-Heading {
+  text-align: center
+}
+
+.Personal-Skills .Center {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.Personal-Skills .Background {
+  padding: 10px 0px 10px 0px;
+  background-image: url(IEEE-Robot-Background.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Personal-Skills ul {
+  list-style-type: none;
+}
+
+.Personal-Skills .Column {
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+}
+
+.Personal-Skills li {
+  background: var(--card-background-color);
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  transition: 0.5s;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.References {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.References .Section-Heading {
+  text-align: center;
+}
+
+.References .Column{
+  float: left;
+  width: 50%;
+}
+
+.References .Referance {
+  background: var(--card-background-color);
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  transition: 0.5s;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.Contact-Info {
+
+}
+.Contact-Info .card {
+
+}
+
+/* Depricated Material
+Background gradient
+background: var(--background-color);
+background: linear-gradient(-90deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+
+*/
