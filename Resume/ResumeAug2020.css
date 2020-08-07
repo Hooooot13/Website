@@ -8,6 +8,7 @@
 
 html {
     font-size: 12px;
+    max-width: 1200px;
 }
 
 html, body {
@@ -28,9 +29,11 @@ div {
   padding: 0px 0px 0px 0px;
 }
 
+@media screen and (min-width: 800px) {
 .Header {
+  max-width: 1197px;
   background-image: url(HeaderBackground.jpg);
-  height: 100%;
+  height: 200%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -38,18 +41,52 @@ div {
   background-size: cover;
 }
 
-.Header img{
-}
-
-.header .Title-Card {
+.Header .Title-Card {
+  max-width: 1197px;
   position: absolute;
   width: 100%;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  height: 35%;
+  bottom: 100px;
   background: var(--card-background-color);
   border-radius: 0px;
   text-align: center;
+  padding: 20px;
+}
+
+.Title-Card h1 {
+  width: 100%;
+}
+
+.Header .Title-Card-Text {
+  float: left;
+  width:50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.title-card-text p {
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header .Title-Card-Picture {
+  float: right;
+  height: 100%;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.Title-Card-Picture img {
+  margin: auto;
+  max-height: 100%;
+  max-width: 50%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .Section-Heading {
@@ -265,10 +302,232 @@ div {
 .Contact-Info .card {
 
 }
+}
 
-/* Depricated Material
-Background gradient
-background: var(--background-color);
-background: linear-gradient(-90deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+@media screen and (max-width: 800px) {
 
-*/
+  body {
+    max-width: 800px;
+  }
+
+  .Header {
+    max-width: 800px;
+    background-image: url(HeaderBackground.jpg);
+    height: 200%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .Header .Title-Card {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    background: var(--card-background-color);
+    border-radius: 0px;
+    align-content: center;
+    text-align: center;
+  }
+
+  .Title-Card h1 {
+    width: 100%;
+  }
+
+  .Header .Title-Card-Text {;
+    margin: auto;
+    width:95%;
+    text-align: center;
+
+  }
+
+  .title-card-text p {
+  }
+
+  .Header .Title-Card-Picture {
+    margin:auto;
+    width: 100%;
+  }
+
+  .Title-Card-Picture img {
+    margin: auto;
+    max-height: 100%;
+    max-width: 50%;
+    border-radius: 50%;
+  }
+
+  .Section-Heading {
+    padding: 10px 0px 10px 0px;
+    top: 10%;
+    width: 100%;
+
+    height: 10%;
+    background-color: white;
+  }
+
+  .Section-Heading h1 {
+    position: relative;
+    text-align: center;
+  }
+
+  .Experience {
+    width: 100%;
+    position: relative;
+  }
+
+  .Experience .Dates {
+    font-style: oblique;
+  }
+
+  .Experience h3{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Experience .Company {
+    padding: 10px 0px 10px 0px;
+    background: var(--card-background-color);
+    position: relative;
+    left: 0%;
+    transform: translate(0%, 0%);
+    transition: 0.5s;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .Experience .IEEE-RobotTeam {
+    background-image: url(IEEE-Robot-Background.jpg);
+    height: 150%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Experience .ESR {
+    background-image: url(ESR-Background-Image.jpg);
+    height: 150%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Experience .IAC {
+    background-image: url(IAC-Background-Image.jpg);
+    height: 150%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Experience .American {
+    background-image: url(American-Background-Image.jpg);
+    height: 150%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Experience .Company h3{
+    color: black;
+  }
+
+  .Technical-Skills {
+    position: relative;
+  }
+
+  .Technical-Skills .Section-Heading {
+    text-align: center
+  }
+
+  .Technical-Skills .Background {
+    padding: 10px 0px 10px 0px;
+    background-image: url(IEEE-Robot-Background.jpg);
+    min-height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Technical-Skills ul {
+    list-style-type: none;
+  }
+
+  .Technical-Skills .Center {
+
+  }
+
+  .Technical-Skills .Column {
+    margin: auto;
+    width: 70%;
+    padding: 0 10px;
+  }
+
+  .Technical-Skills li {
+    margin: auto;
+    background: var(--card-background-color);
+    padding: 10px 10px 10px 10px;
+    margin-top: 2px;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .Personal-Skills {
+    width: 100%;
+    position: relative;
+
+  }
+
+  .Personal-Skills .Section-Heading {
+    text-align: center
+  }
+
+  .Personal-Skills .Center {
+    position: relative;
+  }
+
+  .Personal-Skills .Background {
+    padding: 10px 0px 10px 0px;
+    background-image: url(IEEE-Robot-Background.jpg);
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Personal-Skills ul {
+    list-style-type: none;
+  }
+
+  .Personal-Skills .Column {
+    width: 70%;
+    padding: 0 10px;
+  }
+
+  .Personal-Skills li {
+    background: var(--card-background-color);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
